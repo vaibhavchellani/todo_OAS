@@ -8,15 +8,24 @@ schemes:
   - https
 basePath: /
 paths:
-  /:
+  /task:
     get:
-      summary: Get client IP
-      parameters:
-        - in: query
-          name: format
-          type: string
-          description: 'The format to return the response in, i.e. json.'
-          default: json
+      summary: "Get all tasks"
       responses:
         '200':
           description: Success response
+    post:
+      summary: post a new task
+      description: post a new task
+      responses:
+        200:
+          description: Success
+    delete:
+      summary: delete a task
+      description: delete a task
+      responses:
+        200:
+          description: Success
+          
+    
+    
