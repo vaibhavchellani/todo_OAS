@@ -1,0 +1,22 @@
+swagger: '2.0'
+info:
+  version: "1.0.0"
+  title: "todo list"
+  description: "simple todo list experiment"
+host: api.org
+schemes: 
+  - https
+basePath: /
+paths:
+  /:
+    get:
+      summary: Get client IP
+      parameters:
+        - in: query
+          name: format
+          type: string
+          description: 'The format to return the response in, i.e. json.'
+          default: json
+      responses:
+        '200':
+          description: Success response
