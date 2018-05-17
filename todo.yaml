@@ -1,4 +1,3 @@
-swagger: '2.0'
 info:
   version: "1.0.0"
   title: "todo list"
@@ -27,22 +26,24 @@ paths:
       responses:
         200:
           description: Success
-    
+swagger: '2.0'
+
 definitions:
   task :
-    type: object
+    type: "object"
+    description: "this is object desc"
     properties:
       id:
-        type: "integer"
-        format: "int64"
+        type: "object"
+        format: "http://schema.org/identifier"
       title:
-        type: string
+        type: "object"
         description: "Title  of the task"
       timeLimit:
-        type: "string"
+        type: "object"
         format: "date-time"
       desc:
-        type: string
+        type: "object"
         description: detail of the task 
       status:
         type: "string"
